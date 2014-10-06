@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MyActivity">
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/my_activity_btn"
+        android:onClick="GoToNewActivity"/>
+
+    <com.example.androidfirstatt.MyView
+        android:id="@+id/my_activity_my_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        custom:res_name="@string/name"
+        custom:res_review="@string/review"/>
+
+    <ImageView
+        android:id="@+id/my_activity_line"
+        android:layout_width="match_parent"
+        android:layout_height="3px"
+        android:layout_below="@+id/my_activity_my_view"
+        android:src="@drawable/horizontal_line"
+        />
+
+
+    <TextView
+        android:id="@+id/my_activity_info_holder"
+        android:text="@string/info_holder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/my_activity_line"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:id="@+id/my_activity_work_time"
+        android:text="@string/work_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/my_activity_info_holder"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/my_activity_address"
+        android:text="@string/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/my_activity_work_time"
+        android:textSize="17sp"
+        android:textColor="#828282"/>
+
+    <ImageButton
+        android:id="@+id/my_activity_call_btn"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/my_activity_address"
+        android:src="@drawable/call"
+        android:onClick="GoToNewActivity"
+        />
+
+    <ImageButton
+        android:id="@+id/my_activity_btn_2"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/my_activity_address"
+        android:layout_toRightOf="@+id/my_activity_call_btn"
+        android:src="@drawable/save"
+        android:onClick="GoToNewActivity" />
+
+    <ImageButton
+        android:id="@+id/my_activity_btn_3"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/my_activity_address"
+        android:layout_toRightOf="@+id/my_activity_btn_3"
+        android:src="@drawable/share"
+        android:onClick="GoToNewActivity" />
+
+    <ImageView
+        android:id="@+id/my_activity_map"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/my_activity_call_btn"
+        android:src="@drawable/map"/>
+
+
+
+
+
+</RelativeLayout>
