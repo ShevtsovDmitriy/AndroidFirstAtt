@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MyViewAttrs">
+        <attr name="res_icon" format="integer"/>
+        <attr name="res_name" format="string"/>
+        <attr name="res_review" format="string"/>
+
+    </declare-styleable>
+</resources>
